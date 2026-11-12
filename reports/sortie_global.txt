@@ -1,0 +1,6 @@
+valeur de base : 0.1157
+montant       0.1157
+anciennete    0.0576
+nuit          0.0571
+freq_24h      0.0556
+graphiques ecrits

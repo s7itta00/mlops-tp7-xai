@@ -1,0 +1,14 @@
+--- benali : {'montant': 1800.0, 'anciennete': 30.0, 'freq_24h': 4.0, 'nuit': 1.0}
+valeur de base : 0.1157
+  nuit        +0.3697
+  montant     +0.3665
+  anciennete  +0.0903
+  freq_24h    -0.0183
+base + somme   : 0.924 | prediction : 0.924
+--- test_668 : {'montant': 2661.92, 'anciennete': 11.0, 'freq_24h': 6.0, 'nuit': 0.0}
+valeur de base : 0.1157
+  montant     +0.5221
+  anciennete  +0.2185
+  freq_24h    +0.1807
+  nuit        -0.0410
+base + somme   : 0.996 | prediction : 0.996

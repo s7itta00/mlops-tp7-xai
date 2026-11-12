@@ -1,0 +1,33 @@
+foret fraude@production      F1 = 0.8669 | fraudes detectees : 114 / 134
+logistique, montant brut     F1 = 0.7407 | fraudes detectees : 90 / 134
+logistique, log10(montant)   F1 = 0.8593 | fraudes detectees : 113 / 134
+coefficients standardises : {'anciennete': -2.58, 'freq_24h': 2.75, 'nuit': 2.23, 'log_montant': 4.93}
+cote x 0.928 par mois d'anciennete ; x 4.76 par transaction en 24 h
+arbre profondeur 2 (4 feuilles) F1 = 0.2293 | fraudes detectees : 18 / 134
+arbre profondeur 3 (8 feuilles) F1 = 0.5737 | fraudes detectees : 72 / 134
+arbre profondeur 6 (50 feuilles) F1 = 0.7510 | fraudes detectees : 95 / 134
+arbre profondeur None (206 feuilles) F1 = 0.7556 | fraudes detectees : 102 / 134
+|--- montant <= 1505.7
+|   |--- freq_24h <= 6.5
+|   |   |--- nuit <= 0.5
+|   |   |   |--- class: 0
+|   |   |--- nuit >  0.5
+|   |   |   |--- class: 0
+|   |--- freq_24h >  6.5
+|   |   |--- montant <= 371.9
+|   |   |   |--- class: 0
+|   |   |--- montant >  371.9
+|   |   |   |--- class: 0
+|--- montant >  1505.7
+|   |--- nuit <= 0.5
+|   |   |--- anciennete <= 69.5
+|   |   |   |--- class: 1
+|   |   |--- anciennete >  69.5
+|   |   |   |--- class: 0
+|   |--- nuit >  0.5
+|   |   |--- anciennete <= 64.0
+|   |   |   |--- class: 1
+|   |   |--- anciennete >  64.0
+|   |   |   |--- class: 1
+
+Mme Benali : feuille/noeud 13 | P = 0.983

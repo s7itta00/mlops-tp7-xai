@@ -1,0 +1,5 @@
+            MDI (foret)  permutation  ecart-type
+montant           0.479        0.593       0.034
+freq_24h          0.191        0.269       0.022
+anciennete        0.237        0.268       0.031
+nuit              0.093        0.196       0.017

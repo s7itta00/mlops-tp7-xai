@@ -1,0 +1,6 @@
+modele      : fraude, version 1 | run f8bb3eea
+classe      : RandomForestClassifier | {'n_estimators': '500', 'max_depth': '16'}
+F1          : 0.8669 | F1 enregistre dans le run : 0.8669
+precision   : 0.8837 | rappel : 0.8507 | AUC : 0.9872
+matrice     : [[1101, 15], [20, 114]]
+Mme Benali : P(fraude) = 0.924
